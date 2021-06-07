@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 		features=".//Features/Customers.feature",
 		glue="stepDefinitions",
 		dryRun=false,               //if true ->it will check whether every features contains step definitions or not before actual execution
-		plugin= {"pretty","html:target/cucumber-report.html"},
+		plugin= {"pretty","html:target/cucumber-report.html","json:target/cucumber.json"},
 		tags = "@AllTest" 
 		)
 
