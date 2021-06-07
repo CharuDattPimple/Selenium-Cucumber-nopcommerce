@@ -57,14 +57,14 @@ public class customersSteps extends baseClass {
     loginPage = new loginPage(driver);
     customerPage = new customerPage(driver);
     logger.info("********** Opening URL *************");
-    driver.get("https://admin-demo.nopcommerce.com");
+    driver.get(confProp.getProperty("url"));
 
   }
 
   @When("User enters credentials")
   public void user_enters_credentials() {
     logger.info("********** Entering credentials  *************");
-    loginPage.enterCredentials("admin@yourstore.com", "admin");
+    loginPage.enterCredentials(confProp.getProperty("username"),confProp.getProperty("password"));
   }
   
   @When("Click on Login button")
