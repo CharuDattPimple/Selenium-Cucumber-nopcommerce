@@ -1,6 +1,21 @@
 # Selenium-Cucumber-nopcommerce
 
-# Installation
+# Tools and technology used : 
+
+Language: Java 
+
+Version : 1.8
+
+Testing framework: Cucumber
+
+Automation tool: Selenium webdriver
+
+Build tool: maven
+
+Logging: log4j
+
+Reporting: cucumber reporting
+
 
 
 
