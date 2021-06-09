@@ -38,7 +38,12 @@ public class customersSteps extends baseClass {
 
     if (browserName.equals("chrome")) {
       WebDriverManager.chromedriver().setup();
-      driver = new ChromeDriver();
+      
+      ChromeOptions chrOps=new ChromeOptions();
+      chrOps.addArguments("--headless","--window-size=1920,1200");
+      
+      driver = new ChromeDriver(chrOps);
+      
     } else if (browserName.equals("firefox")) {
       WebDriverManager.firefoxdriver().setup();
       driver = new FirefoxDriver();
