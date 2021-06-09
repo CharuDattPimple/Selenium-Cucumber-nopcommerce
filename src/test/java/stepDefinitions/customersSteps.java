@@ -28,7 +28,7 @@ public class customersSteps extends baseClass {
   public void setUp() throws IOException {
     //Set up Logger added
     logger = Logger.getLogger("noCommerce");
-    PropertyConfigurator.configure("Log4j.properties");
+    PropertyConfigurator.configure("log4j.properties");
 
     // Read Properties
     confProp = new Properties();
